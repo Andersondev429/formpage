@@ -1,0 +1,88 @@
+@mixin text($color, $font-size, $font-family, $margin-bottom) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    margin-bottom: $margin-bottom;
+}
+
+
+body{
+    margin: 2%;
+    background-image: url("/node_modules/resources/img/backgroundLp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+
+.form{
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #131212f1;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.form-control{
+    padding: 5px;
+}
+
+.img-form{
+    width: 45%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form-question{
+    @include text(white, 15px, Arial, 5px);
+}
+
+.form-check{
+    margin: 0px;
+    height: 8px;
+    margin-left: 0em;
+}
+
+
+.form-check-input{
+    width: 0.9em;
+    height: 0.9em;
+    margin: auto;
+    margin-top: 6px;
+}
+
+.form-check-label{
+    @include text(white, 15px, Arial, 5px);
+}
+
+.switch-form{
+    margin-top: 4%;
+}
+
+#flexSwitchCheckDefault, #flexSwitchCheckDefault2, #flexSwitchCheckDefault3, #flexSwitchCheckDefault4{
+    width: 8%;
+    height: 60%;
+}
+
+.check-line{
+    margin-top: 4%;
+}
+
+.form-check-inline{
+    margin-right: 1rem;
+}
+
+.btn-outline-danger{
+    margin-top: 4%;
+}
+
+.text-final{
+    @include text(white, 15px, Arial, 5px);
+    margin-top: 5%;
+}
+
+.form-check-label{
+    margin-bottom: 0px;
+}
